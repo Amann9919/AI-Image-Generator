@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url(Images/bg1.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 400px;
+    height: 540px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid rgba(128, 126, 126, 0.244);
+}
+
+.form-group{
+    position: relative;
+    width: 340px;
+    margin: 30px 0;
+    border-bottom: 3px solid #ffff;
+}
+
+@media(max-width: 768px){
+    body{
+        width: 100vw;
+        height: 100vh;
+        background: url(Images/bg4.jpeg)no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    .container{
+        width: 280px;
+        height: 460px;
+        background: rgba(0, 0, 0, 0.283, 0.9);
+        box-shadow: 0 0 25px rgba(246, 255, 0, 0.737);
+        display: flex;
+        margin: 45px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+    
+}
+
+@media(max-width: 768px){
+    .form-group{
+        position: relative;
+        width: 240px;
+        border-bottom: 3px solid #ffff;
+    }
+}
+
+h2
+{
+    color: #ffff;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.form-group input
+{
+    width: 100%;
+    height: 50px;
+    padding: 0 35px 0 10px;
+    font-size: 1.2em;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.form-group label
+{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: #fff;
+    transition: 0.5s;
+}
+
+input:focus ~ label,
+input:valid ~ label
+{
+    top: -5px;
+}
+
+.form-group i
+{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #ffff;
+    font-size: 1.2em;
+}
+
+p
+{
+    text-align: center;
+    color: #fff;
+    margin: 10px 0;
+}
+
+p>a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+p>a:hover
+{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#btn
+{
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all 0.4s;
+    color: #fff;
+    background-color: rgba(33, 33, 33, 0.45);
+}
+
+#btn:hover
+{
+    background: rgba(40, 40, 40, 0.69);
+    color: #ffffff;
+    translate: 0px -3px;
+    box-shadow: 0px 5px 8px  rgba(14, 45, 48, 0.751);
+}
